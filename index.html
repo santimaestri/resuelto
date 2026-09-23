@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resuelto | Vendemos tu marca en Mercado Libre Argentina</title>
-    <meta name="description" content="Vendedor con operación propia en Mercado Libre Argentina. Compramos en firme o tomamos la distribución de tu marca: importamos, publicamos, cuidamos el precio y atendemos al comprador.">
+    <title>Resuelto | IA y automatización probadas en operación propia</title>
+    <meta name="description" content="Automatizamos la operación de vendedores de Mercado Libre, la producción de redacciones y la administración de pymes, y ayudamos a equipos a trabajar con Claude. Todo corre primero sobre nuestra propia operación.">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,7 +26,7 @@
                         brand: {
                             dark: '#0B1120',
                             card: '#1E293B',
-                            accent: '#D4AF37', // Dorado/Amarillo similar al tuyo
+                            accent: '#D4AF37', 
                             accentHover: '#B3932E',
                         }
                     }
@@ -68,9 +68,9 @@
                     <a href="#" class="text-3xl font-bold tracking-tighter text-white">Resuelto<span class="text-brand-accent">.</span></a>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#modelo" class="text-sm font-medium hover:text-brand-accent transition-colors">Cómo trabajamos</a>
-                    <a href="#garantias" class="text-sm font-medium hover:text-brand-accent transition-colors">Qué garantizamos</a>
-                    <a href="#operacion" class="text-sm font-medium hover:text-brand-accent transition-colors">La operación</a>
+                    <a href="#servicios" class="text-sm font-medium hover:text-brand-accent transition-colors">Qué hacemos</a>
+                    <a href="#metodo" class="text-sm font-medium hover:text-brand-accent transition-colors">Método</a>
+                    <a href="#pruebas" class="text-sm font-medium hover:text-brand-accent transition-colors">Pruebas</a>
                     <a href="#contacto" class="bg-brand-accent text-brand-dark px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-brand-accentHover transition-colors">Hablemos</a>
                 </div>
                 <!-- Mobile menu button -->
@@ -84,9 +84,9 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-slate-800">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#modelo" class="block px-3 py-2 text-base font-medium hover:text-brand-accent">Cómo trabajamos</a>
-                <a href="#garantias" class="block px-3 py-2 text-base font-medium hover:text-brand-accent">Qué garantizamos</a>
-                <a href="#operacion" class="block px-3 py-2 text-base font-medium hover:text-brand-accent">La operación</a>
+                <a href="#servicios" class="block px-3 py-2 text-base font-medium hover:text-brand-accent">Qué hacemos</a>
+                <a href="#metodo" class="block px-3 py-2 text-base font-medium hover:text-brand-accent">Método</a>
+                <a href="#pruebas" class="block px-3 py-2 text-base font-medium hover:text-brand-accent">Pruebas</a>
                 <a href="#contacto" class="block px-3 py-2 text-base font-medium text-brand-accent">Hablemos</a>
             </div>
         </div>
@@ -103,187 +103,228 @@
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
                 </span>
-                Vendedor con operación propia en Mercado Libre
+                IA y automatización
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-6 leading-tight">
-                Llevamos tu marca a <br class="hidden md:block">
-                <span class="text-brand-accent">Mercado Libre Argentina</span>
+                Sistemas que trabajan solos, <br class="hidden md:block">
+                <span class="text-brand-accent">probados en casa</span>
             </h1>
             <p class="mt-4 max-w-3xl text-lg md:text-xl text-slate-400 mx-auto mb-10">
-                Te compramos en firme o tomamos la distribución. Importamos, publicamos, ponemos precio y le respondemos al comprador — con sistemas que no dejan que tu precio se rompa ni que una consulta quede sin contestar.
+                Automatizamos la operación de vendedores de Mercado Libre, la producción de redacciones y la administración de pymes, y armamos equipos que trabajan con Claude. Nada de lo que ofrecemos es teoría: todo corre primero sobre nuestra propia operación.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#modelo" class="bg-brand-accent text-brand-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accentHover transition-all flex items-center justify-center gap-2">
-                    Cómo trabajamos <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                <a href="#metodo" class="bg-brand-accent text-brand-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-brand-accentHover transition-all flex items-center justify-center gap-2">
+                    Conocé nuestro método <i data-lucide="arrow-right" class="w-5 h-5"></i>
                 </a>
-                <a href="#contacto" class="px-8 py-4 rounded-full font-semibold text-lg border border-slate-700 hover:border-slate-500 hover:bg-slate-800/50 transition-all text-white">
-                    Hablemos
+                <a href="#servicios" class="px-8 py-4 rounded-full font-semibold text-lg border border-slate-700 hover:border-slate-500 hover:bg-slate-800/50 transition-all text-white">
+                    Qué hacemos
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Trust Band -->
-    <section class="py-10 border-y border-slate-800 bg-slate-900/50">
+    <!-- Trust Band (Logos) -->
+    <section id="casos" class="py-10 border-y border-slate-800 bg-slate-900/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-sm font-semibold text-slate-500 uppercase tracking-wider mb-8">Operamos y trabajamos con</p>
+            <p class="text-center text-sm font-semibold text-slate-500 uppercase tracking-wider mb-8">Trabajamos con</p>
             <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Text-based logos matching screenshots -->
+                <div class="text-3xl font-black text-white tracking-tighter italic">Olé</div>
+                <div class="text-3xl font-bold text-white tracking-tight flex items-center gap-1">Clarín <div class="w-3 h-3 bg-red-500 rounded-full mt-1"></div></div>
                 <div class="flex items-center gap-2">
                     <i data-lucide="shopping-bag" class="w-8 h-8 text-yellow-500"></i>
                     <span class="text-2xl font-bold text-white tracking-tight leading-none">mercado<br>libre</span>
                 </div>
-                <div class="text-3xl font-bold text-white tracking-tight flex items-center gap-1">Clarín <div class="w-3 h-3 bg-red-500 rounded-full mt-1"></div></div>
-                <div class="text-3xl font-black text-white tracking-tighter italic">Olé</div>
             </div>
         </div>
     </section>
 
-    <!-- Modelo -->
-    <section id="modelo" class="py-24 relative">
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Dos formas de trabajar juntos</h2>
-                <p class="max-w-2xl mx-auto text-slate-400">Según en qué punto esté tu marca en el mercado argentino. Las dos empiezan igual: comprándote.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Qué hacemos</h2>
+                <p class="max-w-2xl mx-auto text-slate-400">Cuatro frentes, un mismo método: ordenar los datos que ya tenés, automatizar lo que se repite y dejar a una persona decidiendo lo importante.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Compra en firme -->
                 <div class="feature-card bg-brand-card rounded-2xl p-8 border border-slate-700/50">
                     <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 text-brand-accent">
-                        <i data-lucide="package-check" class="w-7 h-7"></i>
+                        <i data-lucide="shopping-cart" class="w-7 h-7"></i>
                     </div>
-                    <p class="mono text-xs uppercase tracking-widest text-brand-accent mb-3">Marcas con rotación probada</p>
-                    <h3 class="text-xl font-bold text-white mb-3">Compra en firme</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">Vendedores de Mercado Libre</h3>
                     <p class="text-slate-400 mb-6 text-sm leading-relaxed">
-                        Te compramos el pedido y lo pagamos. El riesgo de stock es nuestro, no tuyo.
+                        Automatizamos la parte que toca la plata. Sistemas que escriben en la plataforma de verdad, todos los días, con el freno de mano puesto.
                     </p>
                     <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span>Pagamos el pedido. Sin consignación ni financiación.</span></li>
-                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span>Importamos y nacionalizamos nosotros.</span></li>
-                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span>No pedimos exclusividad para empezar.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Precios que se corrigen solos.</strong> Nunca por debajo de tu costo real, nunca por encima de tu lista.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Posventa que contesta.</strong> Responde en el momento, escala solo lo grave y se audita a sí misma.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Stock que no se corta.</strong> Reposición a Full, reactivación de publicaciones pausadas y reclamos por lo que la plataforma pierde.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Números reales.</strong> Comisión y envío tomados del pago de cada venta, no de una tabla.</span></li>
                     </ul>
                 </div>
 
-                <!-- Distribución -->
                 <div class="feature-card bg-brand-card rounded-2xl p-8 border border-slate-700/50">
                     <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 text-brand-accent">
-                        <i data-lucide="trending-up" class="w-7 h-7"></i>
+                        <i data-lucide="newspaper" class="w-7 h-7"></i>
                     </div>
-                    <p class="mono text-xs uppercase tracking-widest text-brand-accent mb-3">Marcas por desarrollar</p>
-                    <h3 class="text-xl font-bold text-white mb-3">Distribución</h3>
+                    <h3 class="text-xl font-bold text-white mb-3">Medios y redacciones</h3>
                     <p class="text-slate-400 mb-6 text-sm leading-relaxed">
-                        Abrimos el canal desde cero, midiendo antes de prometer.
+                        Datos que la competencia no tiene, porque los construimos nosotros. Con la metodología escrita, para que la nota resista que la discutan.
                     </p>
                     <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span>Arrancamos con una compra chica para medir rotación real.</span></li>
-                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span>Construimos las publicaciones y el posicionamiento.</span></li>
-                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span>Si responde, pasamos a pedidos regulares.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Fuentes automatizadas.</strong> Registros públicos, aduana y oferta publicada, ordenados en una base que se actualiza sola.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Notas con dato propio.</strong> Relevamiento hecho por nosotros, con la ficha metodológica al pie.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Marketing de afiliación.</strong> El lector se lleva una respuesta; la plataforma, una visita que sirve.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Entrega lista para el CMS.</strong> Volanta, título, bajada, tablas y piezas para redes, en el formato de la redacción.</span></li>
                     </ul>
                 </div>
-            </div>
 
-            <p class="text-center text-slate-500 text-sm mt-10 max-w-2xl mx-auto">
-                <strong class="text-slate-400 font-semibold">Lo que no hacemos:</strong> administrar la tienda de un tercero. Vendemos en nuestra cuenta, con nuestro nombre y nuestro riesgo.
-            </p>
-        </div>
-    </section>
-
-    <!-- Garantías -->
-    <section id="garantias" class="py-24 bg-slate-900/80 border-y border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Lo que le pasa a tu marca acá adentro</h2>
-                <p class="max-w-2xl mx-auto text-slate-400">Entregarle una marca a un revendedor suele significar precios rotos, preguntas sin contestar y publicaciones agotadas. Estas son las cuatro cosas que tenemos resueltas por sistema, no por buena voluntad.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-
-                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i data-lucide="shield-check" class="w-6 h-6 text-brand-accent"></i>
-                        <h3 class="text-lg font-bold text-white">Tu precio no se rompe</h3>
+                <div class="feature-card bg-brand-card rounded-2xl p-8 border border-slate-700/50">
+                    <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 text-brand-accent">
+                        <i data-lucide="building-2" class="w-7 h-7"></i>
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Un control automático impide publicar por debajo del piso de rentabilidad. Todos los días, un proceso revisa cada publicación activa contra el costo real: si alguna está vendiendo a pérdida, salta esa misma mañana. Tu marca no termina siendo la oferta barata de nadie.
+                    <h3 class="text-xl font-bold text-white mb-3">Pymes</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        El trabajo administrativo que se repite todas las semanas, hecho por un flujo que no se olvida ni se cansa.
                     </p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Facturas y comprobantes.</strong> Se leen, se ordenan en Drive y se cargan donde tienen que estar.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Flujos entre tus herramientas.</strong> Gmail, Drive, Sheets, Notion y tus sistemas conectados con n8n.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Tableros que se arman solos.</strong> Los números del negocio actualizados sin copiar y pegar.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Avisos a tiempo.</strong> Vencimientos, faltantes y desvíos que llegan antes de que sean un problema.</span></li>
+                    </ul>
                 </div>
 
-                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i data-lucide="message-circle" class="w-6 h-6 text-brand-accent"></i>
-                        <h3 class="text-lg font-bold text-white">A tu cliente le contestan</h3>
+                <div class="feature-card bg-brand-card rounded-2xl p-8 border border-slate-700/50">
+                    <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 text-brand-accent">
+                        <i data-lucide="sparkles" class="w-7 h-7"></i>
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Respuesta al comprador el mismo día, todos los días, también fines de semana. Los casos delicados escalan a una persona en lugar de resolverse mal. Y dos veces por semana auditamos nuestras propias respuestas para ver qué contestamos flojo.
+                    <h3 class="text-xl font-bold text-white mb-3">Equipos que adoptan Claude</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        Llevamos la IA del chat suelto al trabajo diario del equipo, con el criterio de la casa escrito para que no dependa de quién pregunta.
                     </p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Skills a medida.</strong> El manual de estilo, los controles y el paso a paso del equipo, empaquetados para que Claude los siga.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Conectores.</strong> Claude trabajando sobre tu Drive, tu correo, tus planillas y tus automatizaciones.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Rutinas programadas.</strong> Tareas que corren solas a la hora que corresponde y dejan el resultado listo para revisar.</span></li>
+                        <li class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-accent shrink-0"></i> <span><strong class="text-white font-semibold">Acompañamiento.</strong> Arrancamos con una tarea real del equipo y se amplía cuando funciona.</span></li>
+                    </ul>
                 </div>
-
-                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i data-lucide="boxes" class="w-6 h-6 text-brand-accent"></i>
-                        <h3 class="text-lg font-bold text-white">No nos quedamos sin stock</h3>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Reposición automática al depósito de Mercado Libre, reactivación de publicaciones que quedaron pausadas con stock disponible, y un control semanal que recupera lo que la plataforma pierde o inmoviliza. Una publicación agotada es una venta que no vuelve.
-                    </p>
-                </div>
-
-                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i data-lucide="bar-chart-3" class="w-6 h-6 text-brand-accent"></i>
-                        <h3 class="text-lg font-bold text-white">Te reportamos números reales</h3>
-                    </div>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Comisión y costo de envío tomados del pago real de cada venta, no de una tabla estimada. Sabemos exactamente qué deja cada producto, cuánto rota y a qué precio se mueve. Y te lo pasamos igual de crudo que como lo miramos nosotros.
-                    </p>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <!-- La operación -->
-    <section id="operacion" class="py-24">
+    <!-- Método -->
+    <section id="metodo" class="py-24 bg-slate-900/80 border-y border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">La operación</h2>
-                <p class="max-w-2xl mx-auto text-slate-400">No somos una persona con una planilla. Esto es lo que hay atrás.</p>
+            <div class="text-center mb-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Nada sale sin pasar un control</h2>
+                <p class="max-w-2xl mx-auto text-slate-400">En la operación se llaman frenos. En la redacción, control metodológico. Es el mismo instinto — y es la razón por la que un sistema nuestro se puede dejar corriendo sobre tu facturación, o una nota nuestra se puede publicar tranquilo.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-slate-800 border border-slate-800 rounded-2xl overflow-hidden max-w-4xl mx-auto mb-12">
-                <div class="bg-brand-card p-8">
-                    <div class="text-4xl font-extrabold text-white tracking-tight mb-2">2</div>
-                    <p class="text-sm text-slate-400 leading-snug">cuentas propias en Mercado Libre, operadas de punta a punta</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 max-w-5xl mx-auto mt-14">
+
+                <div class="flex gap-5 py-5 border-t border-slate-800">
+                    <span class="mono text-brand-accent text-sm font-semibold pt-1 shrink-0">01</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Primero la pregunta, no el dato</h3>
+                        <p class="text-slate-400 text-sm">Escribimos qué queremos confirmar o desmentir antes de mirar nada. Si los datos dicen lo contrario, esa es la respuesta.</p>
+                    </div>
                 </div>
-                <div class="bg-brand-card p-8">
+
+                <div class="flex gap-5 py-5 border-t border-slate-800">
+                    <span class="mono text-brand-accent text-sm font-semibold pt-1 shrink-0">02</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Arranca leyendo</h3>
+                        <p class="text-slate-400 text-sm">Ningún sistema escribe nada el primer día. Primero mira, informa, y vos comparás contra la realidad.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5 py-5 border-t border-slate-800">
+                    <span class="mono text-brand-accent text-sm font-semibold pt-1 shrink-0">03</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Control antes de salir</h3>
+                        <p class="text-slate-400 text-sm">¿Esto mide lo que digo que mide? ¿Se sostiene en todos los casos o es un promedio con excepciones? Si no pasa, no sale.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5 py-5 border-t border-slate-800">
+                    <span class="mono text-brand-accent text-sm font-semibold pt-1 shrink-0">04</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Empieza chico</h3>
+                        <p class="text-slate-400 text-sm">Los productos que vos aprobás, la sección o la tarea que vos elegís. Se amplía cuando vos lo decidís, no antes.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5 py-5 border-t border-slate-800">
+                    <span class="mono text-brand-accent text-sm font-semibold pt-1 shrink-0">05</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Verifica releyendo</h3>
+                        <p class="text-slate-400 text-sm">Después de escribir en la plataforma, vuelve a preguntarle y confirma que quedó exactamente lo que tenía que quedar.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5 py-5 border-t border-slate-800">
+                    <span class="mono text-brand-accent text-sm font-semibold pt-1 shrink-0">06</span>
+                    <div>
+                        <h3 class="text-white font-semibold mb-1">Freno, vuelta atrás y auditoría</h3>
+                        <p class="text-slate-400 text-sm">Tope por corrida, corte automático si algo se dispara, rollback. Y una segunda mirada que revisa el propio trabajo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pruebas -->
+    <section id="pruebas" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">La prueba</h2>
+                <p class="max-w-2xl mx-auto text-slate-400">No tenemos testimonios de relleno. Tenemos esto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-slate-800 border border-slate-800 rounded-2xl overflow-hidden max-w-5xl mx-auto mb-12">
+                <div class="bg-brand-card p-6 md:p-8">
                     <div class="text-4xl font-extrabold text-white tracking-tight mb-2">88</div>
-                    <p class="text-sm text-slate-400 leading-snug">procesos automáticos corriendo todos los días</p>
+                    <p class="text-sm text-slate-400 leading-snug">automatizaciones corriendo en producción</p>
                 </div>
-                <div class="bg-brand-card p-8">
-                    <div class="text-4xl font-extrabold text-white tracking-tight mb-2">100%</div>
-                    <p class="text-sm text-slate-400 leading-snug">importación propia: compramos, traemos y nacionalizamos</p>
+                <div class="bg-brand-card p-6 md:p-8">
+                    <div class="text-4xl font-extrabold text-white tracking-tight mb-2">2</div>
+                    <p class="text-sm text-slate-400 leading-snug">cuentas de Mercado Libre operadas de punta a punta</p>
+                </div>
+                <div class="bg-brand-card p-6 md:p-8">
+                    <div class="text-4xl font-extrabold text-white tracking-tight mb-2">3</div>
+                    <p class="text-sm text-slate-400 leading-snug">ediciones de datos para Clarín con Mercado Libre: Propiedades, Autos y Motos</p>
                 </div>
             </div>
 
-            <div class="max-w-3xl mx-auto text-center">
-                <p class="text-slate-400 leading-relaxed mb-6">
-                    Vendemos repuestos y herramientas de reparación de electrónica, y estamos abiertos a categorías nuevas. Importamos directo, manejamos el despacho y el depósito, y publicamos y atendemos con equipo propio.
-                </p>
-                <p class="text-slate-400 leading-relaxed">
-                    Todo lo que ofrecemos cuidar en tu marca lo corremos primero sobre la nuestra. Si un precio sale mal, lo perdemos nosotros antes que vos.
-                </p>
-            </div>
-        </div>
-    </section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
-    <!-- También -->
-    <section class="py-16 border-t border-slate-800 bg-slate-900/50">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="mono text-xs uppercase tracking-widest text-brand-accent mb-4">Además</p>
-            <h2 class="text-2xl font-bold text-white mb-4">Periodismo de datos para Clarín y Olé</h2>
-            <p class="text-slate-400 text-sm leading-relaxed">
-                Producimos relevamientos propios sobre el mercado inmobiliario y automotor argentino, publicados en sus secciones. Es la otra pata del negocio, y explica de dónde viene nuestra manía de que cada número aguante que lo discutan.
-            </p>
+                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
+                    <p class="mono text-xs uppercase tracking-widest text-brand-accent mb-4">Nuestro primer cliente</p>
+                    <h3 class="text-xl font-bold text-white mb-4">Somos nosotros</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Tenemos una importadora que vende repuestos en Mercado Libre. El sistema de e-commerce no se probó en un laboratorio ni en la operación de otro: corre todos los días sobre la nuestra, con nuestra propia plata en juego. Si un precio sale mal, lo perdemos nosotros primero.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Por eso lo ofrecemos: no te vamos a recomendar nada que no estemos dispuestos a correr sobre nuestro propio balance.
+                    </p>
+                </div>
+
+                <div class="bg-brand-card border border-slate-700/50 rounded-2xl p-8">
+                    <p class="mono text-xs uppercase tracking-widest text-brand-accent mb-4">Un ejemplo del trabajo</p>
+                    <h3 class="text-xl font-bold text-white mb-4">Una redacción que arranca sola</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Para las ediciones de Clarín con Mercado Libre armamos bases que se alimentan de fuentes públicas y rutinas con Claude que <strong class="text-white font-semibold">proponen los temas del mes y escriben la nota del día</strong>, con el manual de estilo de la sección cargado.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        La persona no desaparece: elige qué se publica, corrige y firma. Lo que se ahorra es el trabajo de juntar, ordenar y medir, que es justo el que nadie quiere hacer.
+                    </p>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -293,14 +334,14 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="bg-brand-card border border-slate-700 rounded-3xl p-8 md:p-12 shadow-2xl">
                 <div class="text-center mb-10">
-                    <h2 class="text-3xl font-bold text-white mb-4">¿Tenés una marca para vender en Argentina?</h2>
-                    <p class="text-slate-400">Contanos qué producto es y en qué punto está acá. Te respondemos con una lectura del mercado argentino para esa marca, sin compromiso.</p>
+                    <h2 class="text-3xl font-bold text-white mb-4">Contanos qué te está costando tiempo</h2>
+                    <p class="text-slate-400">Un precio que revisás a mano, facturas que cargás una por una, una sección que podría alimentarse sola, un equipo que quiere usar IA y no sabe por dónde empezar. Escribinos y te decimos si lo podemos resolver.</p>
                 </div>
                 <form id="contactForm" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
-                            <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Nombre y marca</label>
-                            <input type="text" id="name" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors" placeholder="Ej: Juan Pérez — Marca S.A.">
+                            <label for="name" class="block text-sm font-medium text-slate-400 mb-2">Nombre o Empresa</label>
+                            <input type="text" id="name" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors" placeholder="Ej: Juan Pérez">
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-slate-400 mb-2">Correo electrónico</label>
@@ -308,17 +349,18 @@
                         </div>
                     </div>
                     <div>
-                        <label for="vertical" class="block text-sm font-medium text-slate-400 mb-2">¿Qué te interesa?</label>
+                        <label for="vertical" class="block text-sm font-medium text-slate-400 mb-2">¿En qué área necesitás ayuda?</label>
                         <select id="vertical" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors appearance-none">
-                            <option>Venderme en firme (compra mayorista)</option>
-                            <option>Distribución de mi marca en Argentina</option>
-                            <option>Todavía no sé, quiero entender el mercado</option>
+                            <option>Automatizar mi operación en Mercado Libre</option>
+                            <option>Periodismo de datos o automatización para mi redacción</option>
+                            <option>Automatizar la administración de mi pyme</option>
+                            <option>Que mi equipo trabaje con Claude</option>
                             <option>Otra consulta</option>
                         </select>
                     </div>
                     <div>
-                        <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Contanos del producto</label>
-                        <textarea id="message" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors" placeholder="Qué producto es, si ya se vende en Argentina y quién lo trae hoy..."></textarea>
+                        <label for="message" class="block text-sm font-medium text-slate-400 mb-2">Mensaje</label>
+                        <textarea id="message" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-brand-accent focus:ring-1 focus:ring-brand-accent transition-colors" placeholder="Contanos brevemente sobre tu proyecto..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-brand-accent text-brand-dark font-bold text-lg py-4 rounded-lg hover:bg-brand-accentHover transition-colors flex justify-center items-center gap-2">
                         Enviar consulta <i data-lucide="send" class="w-5 h-5"></i>
@@ -336,14 +378,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold tracking-tighter text-white mb-6">Resuelto<span class="text-brand-accent">.</span></h2>
             <div class="flex justify-center space-x-6 mb-8">
-                <!-- Solo botón de LinkedIn actualizado -->
-                <a href="https://www.linkedin.com/company/reviu-contenidos" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-white transition-colors">
+                <a href="https://www.linkedin.com/in/santiagomaestri/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-white transition-colors">
                     <span class="sr-only">LinkedIn</span>
-                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
                 </a>
             </div>
             <p class="text-sm text-slate-600">
                 &copy; <script>document.write(new Date().getFullYear())</script> Resuelto. Todos los derechos reservados.
+            </p>
+            <p class="mt-4">
+                <a href="legal/" class="text-xs text-slate-600 hover:text-slate-400 transition-colors">Política de Privacidad y Términos de Servicio</a>
             </p>
         </div>
     </footer>
@@ -383,14 +427,11 @@
 
             // Armar el asunto y el cuerpo del correo
             const subject = encodeURIComponent(`Nueva consulta Resuelto: ${vertical}`);
-            const body = encodeURIComponent(`Nombre/Marca: ${name}\nEmail de contacto: ${email}\nInterés: ${vertical}\n\nMensaje:\n${message}`);
+            const body = encodeURIComponent(`Nombre/Empresa: ${name}\nEmail de contacto: ${email}\nÁrea de interés: ${vertical}\n\nMensaje:\n${message}`);
 
             // Abrir el cliente de correo por defecto dirigido a vos
-            window.location.href = `mailto:santiago@reviu.com.ar?subject=${subject}&body=${body}`;
+            window.location.href = `mailto:santiago.maestri@gmail.com?subject=${subject}&body=${body}`;
         });
     </script>
-    <div style="text-align: center; margin-top: 40px; margin-bottom: 20px;">
-    <a href="/legal/" style="font-size: 12px; color: #666; text-decoration: none;">Política de Privacidad y Términos de Servicio</a>
-</div>
 </body>
 </html>

@@ -1,21 +1,21 @@
 # Resuelto
 
-Sitio web de **Resuelto** — agencia de Inteligencia Artificial y Automatización para
-E-commerce, Medios y Creadores de Contenido.
+Sitio web de **Resuelto** — IA y automatización para vendedores de Mercado Libre,
+medios y redacciones, pymes y equipos que adoptan Claude.
 
-🌐 **En vivo:** [reviu.com.ar](https://reviu.com.ar)
+🌐 **En vivo:** [santimaestri.github.io/resuelto](https://santimaestri.github.io/resuelto/)
 
-> **Nota sobre el nombre:** la empresa se llama **Resuelto**, pero el sitio se
-> sigue accediendo por el dominio `reviu.com.ar` (el nombre anterior). El dominio
-> y el correo de contacto no cambian: solo cambió la marca que se muestra.
+> **Nota sobre el dominio:** el sitio se publica en la dirección de GitHub Pages
+> porque el dominio anterior (`reviu.com.ar`, del nombre viejo REVIU) no se renovó.
+> Si más adelante hay dominio propio, se agrega un archivo `CNAME` con el dominio
+> y se configura en *Settings → Pages*.
 
 ## Qué hay en este repo
 
 | Archivo / carpeta  | Qué es                                                              |
 | ------------------ | ------------------------------------------------------------------- |
-| `index.html`       | La página principal completa (navegación, hero, servicios, casos, método, contacto) |
+| `index.html`       | La página principal completa (navegación, hero, qué hacemos, método, pruebas, contacto) |
 | `legal/index.html` | Política de Privacidad y Términos del Servicio                       |
-| `CNAME`            | Dominio propio del sitio: `reviu.com.ar`                             |
 | `.gitattributes`   | Configuración de Git para el manejo de archivos de texto             |
 
 ## Cómo está hecho
@@ -54,10 +54,19 @@ python3 -m http.server 8000
 
 Y después entrá a <http://localhost:8000>.
 
+> Los links internos son relativos (`legal/`, `../`) para que funcionen tanto en
+> GitHub Pages, que sirve el sitio bajo `/resuelto/`, como con un dominio propio.
+> No usar rutas que empiecen con `/`.
+
+## Contacto
+
+El formulario no usa servidor: abre el correo del visitante con la consulta armada,
+dirigida a `santiago.maestri@gmail.com` (se cambia en el script al final de `index.html`).
+
 ## Cómo publicar cambios
 
 El sitio se publica solo con **GitHub Pages**: cada cambio que llega a la rama
-principal (`main`) queda online en `reviu.com.ar` en un par de minutos.
+principal (`main`) queda online en un par de minutos.
 
 ```bash
 git add .
