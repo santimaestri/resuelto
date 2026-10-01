@@ -1,3 +1,5 @@
+<p><img src="assets/logo-resuelto-claro.png#gh-light-mode-only" alt="Resuelto" width="320"><img src="assets/logo-resuelto.png#gh-dark-mode-only" alt="Resuelto" width="320"></p>
+
 # Resuelto
 
 Sitio web de **Resuelto** — IA y automatización para vendedores de Mercado Libre,
@@ -16,6 +18,7 @@ medios y redacciones, pymes y equipos que adoptan Claude.
 | ------------------ | ------------------------------------------------------------------- |
 | `index.html`       | La página principal completa (navegación, hero, qué hacemos, método, pruebas, contacto) |
 | `legal/index.html` | Política de Privacidad y Términos del Servicio                       |
+| `assets/`          | Logo (versión para fondo oscuro y para fondo claro), favicons e imagen para compartir en redes |
 | `.gitattributes`   | Configuración de Git para el manejo de archivos de texto             |
 
 ## Cómo está hecho
@@ -36,10 +39,10 @@ Definidos en el bloque `tailwind.config` dentro de `index.html`:
 
 | Nombre        | Color     | Uso                          |
 | ------------- | --------- | ---------------------------- |
-| `dark`        | `#0B1120` | Fondo principal              |
+| `dark`        | `#0E1116` | Fondo principal (el negro del logo) |
 | `card`        | `#1E293B` | Fondo de tarjetas            |
-| `accent`      | `#D4AF37` | Dorado — botones y destacados |
-| `accentHover` | `#B3932E` | Dorado al pasar el mouse     |
+| `accent`      | `#FF7A3D` | Naranja del logo — botones y destacados |
+| `accentHover` | `#E8622A` | Naranja al pasar el mouse    |
 
 ## Cómo verlo en tu computadora
 
