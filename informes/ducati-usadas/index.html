@@ -144,6 +144,7 @@ footer { color:var(--muted); font-size:13px; padding:10px 0 40px; display:flex; 
       <li><b>Pesos a dólares:</b> los precios en pesos se pasan a dólares con el dólar MEP del día ($1.539).</li>
       <li><b>Precio raro:</b> si una moto pide 45 % menos que las iguales, se marca en amarillo. Puede ser un error de carga o una moto con un problema. Hay que mirar la publicación.</li>
       <li><b>Antigüedad:</b> «publicada hace» sale de la ficha de cada publicación. Una publicación vieja suele tener un vendedor más abierto a negociar. Mercado Libre lo redondea («hace 1 año» va de 12 a 23 meses). Por eso se cruza con la fecha de la foto, que trae el mes en que se subió: coinciden en 95 de cada 100 publicaciones. Si dice «hace 1 año» y la foto cae en ese rango, se usa el mes de la foto.</li>
+      <li><b>Publicadas hace 3 días o menos:</b> el filtro deja sólo las publicaciones de los últimos 3 días. No incluye las que tienen fotos viejas, porque esas motos ya estaban a la venta.</li>
       <li><b>Fotos viejas:</b> si la publicación es nueva pero las fotos son de 3 meses antes o más, la moto se volvió a publicar: hace más tiempo que está a la venta. Se marca «Fotos de» y el mes.</li>
       <li><b>Contacto:</b> se hace desde cada publicación. 258 de 264 tienen el botón de WhatsApp de Mercado Libre y 151 muestran el teléfono.</li>
     </ul>
@@ -203,6 +204,7 @@ function filtrosDe(clave) {
     <input type="search" placeholder="Buscar en el título" data-k="q">
     <select data-k="modelo"><option value="">Todos los modelos</option>${modelos.map(m => `<option>${esc(m)}</option>`).join('')}</select>
     <select data-k="zona"><option value="">Todas las zonas</option>${zonas.map(z => `<option>${esc(z)}</option>`).join('')}</select>
+    <select data-k="reciente"><option value="">Cualquier antigüedad</option><option value="3">Publicadas hace 3 días o menos</option></select>
     ${clave === 'llamar' ? '' : '<select data-k="quien"><option value="">Dueño y concesionaria</option><option value="d">Sólo dueño</option><option value="c">Sólo concesionaria</option></select>'}
     <span class="cuenta"></span>`;
   ESTADO[clave] = {};
@@ -212,7 +214,8 @@ function filtrar(clave) {
   const f = ESTADO[clave] || {};
   const q = (f.q || '').toLowerCase();
   return LISTAS[clave].filter(x => (!q || x.titulo.toLowerCase().includes(q)) && (!f.modelo || x.modelo === f.modelo)
-    && (!f.zona || x.zona === f.zona) && (!f.quien || (f.quien === 'd') === x.dueno_directo));
+    && (!f.zona || x.zona === f.zona) && (!f.quien || (f.quien === 'd') === x.dueno_directo)
+    && (!f.reciente || (x.dias <= +f.reciente && !x.fotos_de)));
 }
 let ordenTabla = {k: 'dif', asc: true};
 const COLS = [
