@@ -84,7 +84,7 @@ footer { color:var(--muted); font-size:13px; padding:10px 0 40px; display:flex; 
 <div class="wrap">
   <header>
     <a href="../../"><img src="../../assets/logo-resuelto.png" alt="Resuelto"></a>
-    <span class="sello">Informe de prueba · 28/10/2026, 19:27 h</span>
+    <span class="sello">Informe de prueba · 28/10/2026, 19:30 h</span>
   </header>
 
   <h1>Motos usadas de 500 a 800 cc en Mercado Libre:<br><em>a quién llamar hoy</em></h1>
@@ -153,7 +153,7 @@ footer { color:var(--muted); font-size:13px; padding:10px 0 40px; display:flex; 
   <div class="metodo">
     <h2>Cómo se hizo</h2>
     <ul>
-      <li><b>Fuente:</b> el listado público de Mercado Libre, categoría Motos, cilindrada de 500 a 800 cc, todas las marcas, condición usada. Leído el 28/10/2026 a las 19:27 h: 2506 publicaciones, todas; 2484 motos distintas.</li>
+      <li><b>Fuente:</b> el listado público de Mercado Libre, categoría Motos, cilindrada de 500 a 800 cc, todas las marcas, condición usada. Leído el 28/10/2026 a las 19:30 h: 2506 publicaciones, todas; 2484 motos distintas.</li>
       <li><b>Dueño o concesionaria:</b> sale del filtro «Dueño directo» de Mercado Libre.</li>
       <li><b>Modelo:</b> sale de la ficha de Mercado Libre (marca y modelo que cargó el vendedor). «Z 500 SE», «Z500 SE» y «Kawasaki Z500» cuentan como el mismo modelo. 2.475 de 2.484 tienen la ficha leída; el resto se lee en la corrida siguiente.</li>
       <li><b>Comparación:</b> cada moto contra las del mismo modelo, de su año o de un año más o menos, en todo el país. Hacen falta 4 motos iguales o más; si no, la moto no lleva porcentaje.</li>
@@ -212,7 +212,7 @@ function tarjeta(x) {
       <div class="ref">${ref}</div>
       <div class="datos"><span>${fmt(x.km)} km</span><span>${esc(x.lugar.split(' - ')[0])}</span>
         <span>hace ${esc(x.publicado)}</span>${x.fotos_de ? `<span class="viejo" title="La publicación es nueva pero las fotos son de ${x.fotos_de}: la moto se volvió a publicar">Fotos de ${x.fotos_de}</span>` : ''}${x.veces > 1 ? `<span>Publicada ${x.veces} veces</span>` : ''}${x.dueno_directo ? '<span class="dd">Dueño</span>' : '<span>Concesionaria</span>'}</div>
-      <a class="ver" href="https://${x.link.replace(/^https?:\\/\\//,'')}" target="_blank" rel="noopener">Ver publicación</a>
+      <a class="ver" href="https://${x.link.replace(/^https?:\/\//,'')}" target="_blank" rel="noopener">Ver publicación</a>
     </div></article>`;
 }
 
