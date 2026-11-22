@@ -64,7 +64,7 @@ Y después entrá a <http://localhost:8000>.
 ## Contacto
 
 El formulario no usa servidor: abre el correo del visitante con la consulta armada,
-dirigida a `santiago.maestri@gmail.com` (se cambia en el script al final de `index.html`).
+dirigida a `santiago@repuestolibre.com.ar` (se cambia en el script al final de `index.html`).
 
 ## Cómo publicar cambios
 
